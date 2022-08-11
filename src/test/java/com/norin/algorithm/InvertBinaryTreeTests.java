@@ -16,12 +16,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 // 	memory O(1)
 class InvertBinaryTreeTests {
 
-    public class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
@@ -29,9 +35,8 @@ class InvertBinaryTreeTests {
         }
     }
 
-    public TreeNode invertTree(TreeNode root) {
+    public void invertTree(TreeNode root) {
         shift(root);
-        return root;
     }
 
     private void shift(TreeNode root) {
