@@ -67,4 +67,9 @@ class LongestPalindromicSubstringTests {
         assertEquals("a", longestPalindrome("ac"));
     }
 
+    @Test
+    void Test6() {
+        assertEquals("aca", longestPalindrome("aca"));
+    }
+
 }
